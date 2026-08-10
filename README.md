@@ -21,6 +21,6 @@ which is the analogous swift version of the AppleScript
 
 ```
     tell application "SinterPixels"
-        make new dpcument with properties { height: 1000, width: 1000 }
+        make new document with properties { height: 1000, width: 1000 }
     end tell
 ```
