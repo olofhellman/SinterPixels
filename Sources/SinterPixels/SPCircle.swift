@@ -7,12 +7,13 @@
 
 
 import Foundation
+import SinterAppleEvents
 
 
 public extension FourCharCode {
     static var classCircle: FourCharCode { return FourCharCode(string: "Circ")  }
 }
 
-public class SPCircle: SPObject {
+public class SPCircle: SAEObject {
     static public var fcc: FourCharCode { .classCircle }
 }

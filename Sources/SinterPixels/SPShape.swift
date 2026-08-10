@@ -7,6 +7,7 @@
 
 
 import Foundation
+import SinterAppleEvents
 
 public extension FourCharCode {
     static var classShape: FourCharCode { return FourCharCode(string: "Shpe")  }
@@ -18,7 +19,7 @@ public extension FourCharCode {
 }
 
 
-public class SPShape: SPObject {
+public class SPShape: SAEObject {
     static public var fcc: FourCharCode { .classShape }
 
 }

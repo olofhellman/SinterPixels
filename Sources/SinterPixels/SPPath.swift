@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import SinterAppleEvents
 
 public extension FourCharCode {
     static var classPath: FourCharCode { return FourCharCode(string: "Path")  }
     static var pAnchorData: FourCharCode { return FourCharCode(string: "PAkD")  }
 }
 
-public class SPPath: SPObject {
+public class SPPath: SAEObject {
     static public var fcc: FourCharCode { .classPath }
 }

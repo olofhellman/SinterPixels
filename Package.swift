@@ -13,9 +13,15 @@ let package = Package(
             targets: ["SinterPixels"]
         )
     ],
+    dependencies: [
+    .package(url: "https://github.com/olofhellman/SinterAppleEvents.git", from: "0.1.0")
+    ],
     targets: [
         .target(
-            name: "SinterPixels"
+            name: "SinterPixels",
+            dependencies: [
+                .product(name: "SinterAppleEvents", package: "SinterAppleEvents")
+            ]
         )
     ]
 )

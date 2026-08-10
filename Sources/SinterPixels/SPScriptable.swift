@@ -7,6 +7,7 @@
 
 
 import Foundation
+import SinterAppleEvents
 
 public class SPScriptable {
     

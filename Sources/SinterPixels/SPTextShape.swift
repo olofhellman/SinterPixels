@@ -5,7 +5,9 @@
 //  Created by Olof Hellman on 7/12/26.
 //
 
+import Foundation
+import SinterAppleEvents
 
-public class SPTextShape: SPObject {
+public class SPTextShape: SAEObject {
      
 }
