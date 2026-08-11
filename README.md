@@ -9,9 +9,9 @@ Essentially, this package supports swift code like this, which makes a new Sinte
 	if let spApp = SPApp() {
 		let _ = spApp.activate()
 		
-		let props = NSAppleEventDescriptor.record()
-		props.setParam(NSAppleEventDescriptor(int32:1000), forKeyword: .pHeight)
-		props.setParam(NSAppleEventDescriptor(int32:1000), forKeyword: .pWidth)
+		let props = SAERecord()
+		props.setParam(.pHeight, int:1000)
+		props.setParam(.pWidth, int:1000)
 		
 		let madeObject = spApp.make(new: SPDocument.fcc, container: NSAppleEventDescriptor.null(), props: props)
 	}
